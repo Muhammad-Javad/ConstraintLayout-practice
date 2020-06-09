@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         app:srcCompat="@drawable/ic_baseline_filter_4_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
-        app:layout_constraintTop_toBottomOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         app:srcCompat="@drawable/ic_baseline_adb_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -149,7 +149,7 @@
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
-        app:layout_constraintTop_toBottomOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         app:srcCompat="@drawable/ic_baseline_assignment_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -163,7 +163,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
-        app:layout_constraintTop_toBottomOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
         app:srcCompat="@drawable/tomato" />
 
     <TextView
@@ -238,8 +238,30 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/barrier2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/barrier3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
