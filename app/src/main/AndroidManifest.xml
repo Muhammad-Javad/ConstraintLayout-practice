@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CircularConstraintActivity"></activity>
+        <activity android:name=".ImageFilterActivity"></activity>
+        <activity android:name=".CircularConstraintActivity" />
         <activity android:name=".CupcakeActivity" />
         <activity android:name=".MovieActivity" />
         <activity android:name=".MainActivity">

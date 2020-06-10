@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         button_movie.setOnClickListener{ _ -> startActivity(Intent(this, MovieActivity::class.java))}
         button_cupcake.setOnClickListener { _ -> startActivity(Intent(this, CupcakeActivity::class.java)) }
         button_circular_demo.setOnClickListener { _ -> startActivity(Intent(this, CircularConstraintActivity::class.java)) }
+        button_image_filter_view.setOnClickListener { _ -> startActivity(Intent(this, ImageFilterActivity::class.java)) }
     }
 }
