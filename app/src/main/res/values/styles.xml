@@ -6,6 +6,86 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorOnSecondary">@color/white</item>
+
+        <item name="textAppearanceHeadline1">@style/MyTextAppearance.H1</item>
+        <item name="textAppearanceHeadline2">@style/MyTextAppearance.H2</item>
+        <item name="textAppearanceHeadline3">@style/MyTextAppearance.H3</item>
+        <item name="textAppearanceHeadline4">@style/MyTextAppearance.H4</item>
+        <item name="textAppearanceHeadline5">@style/MyTextAppearance.H5</item>
+        <item name="textAppearanceHeadline6">@style/MyTextAppearance.H6</item>
+        <item name="textAppearanceSubtitle1">@style/MyTextAppearance.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/MyTextAppearance.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/MyTextAppearance.Body1</item>
+        <item name="textAppearanceBody2">@style/MyTextAppearance.Body2</item>
+        <item name="textAppearanceButton">@style/MyTextAppearance.Button</item>
+        
+        <item name="android:textViewStyle">@style/MyTextView</item>
+
+    </style>
+    
+    <style name="ShapeAppearance.myComponent.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">5dp</item>
     </style>
 
+    <style name="MyTextAppearance.H1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.H2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.H3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.H4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.H5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.H6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+
+    <style name="MyTextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="MyTextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/vazir</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+    
+    <style name="MyTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/MyTextAppearance.Body2</item>
+    </style>
+    
 </resources>

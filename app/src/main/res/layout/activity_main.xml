@@ -43,11 +43,11 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Beaty and the Beast"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textAppearance="@style/MyTextAppearance.H6"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:text="Beaty and the Beast adwadwadawdawdawdawd" />
+        tools:text="Beaty and the Beast" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -74,6 +74,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="March 2017 PG 129 minutes"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -124,6 +125,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/view"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.myComponent.Small"
+        app:backgroundTint="@color/colorAccent"
         app:srcCompat="@drawable/ic_baseline_filter_4_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -137,6 +140,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
         app:layout_constraintTop_toBottomOf="@+id/view"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.myComponent.Small"
         app:srcCompat="@drawable/ic_baseline_adb_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -150,6 +154,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
         app:layout_constraintTop_toBottomOf="@+id/view"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.myComponent.Small"
         app:srcCompat="@drawable/ic_baseline_assignment_24" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -164,6 +169,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
         app:layout_constraintTop_toBottomOf="@+id/view"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.myComponent.Small"
         app:srcCompat="@drawable/tomato" />
 
     <TextView
@@ -233,7 +239,6 @@
         android:layout_marginTop="8dp"
         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.0"
