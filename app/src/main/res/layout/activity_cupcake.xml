@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cupcake_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CupcakeActivity">
+
+    <ImageView
+        android:id="@+id/big_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unicorn_cupcake"
+        app:layout_constraintDimensionRatio="h,1:0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/small_cake_1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mermaid_cupcake"
+        app:layout_constraintEnd_toStartOf="@+id/small_cake_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_cake" />
+
+    <ImageView
+        android:id="@+id/small_cake_2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pink_cupcake"
+        app:layout_constraintEnd_toStartOf="@+id/small_cake_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/small_cake_1"
+        app:layout_constraintTop_toBottomOf="@+id/big_cake" />
+
+    <ImageView
+        android:id="@+id/small_cake_3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pink_glitter_cupcakes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/small_cake_2"
+        app:layout_constraintTop_toBottomOf="@+id/big_cake" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pink Cupcakes"
+        android:textAppearance="@style/MyTextAppearance.H4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier4" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="small_cake_1,small_cake_3,small_cake_2"
+        tools:layout_editor_absoluteY="731dp" />
+
+    <TextView
+        android:id="@+id/textview_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_level"
+        android:drawablePadding="4dp"
+        android:text="Level : easy"
+        android:textAppearance="@style/MyTextAppearance.Body2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+    <TextView
+        android:id="@+id/textview_baking_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_timer_black_24dp"
+        android:text="Baking time: 30min"
+        android:textAppearance="@style/MyTextAppearance.Body2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textview_level" />
+
+    <Button
+        android:id="@+id/button_bake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Bake"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

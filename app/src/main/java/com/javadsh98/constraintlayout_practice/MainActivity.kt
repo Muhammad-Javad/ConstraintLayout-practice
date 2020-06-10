@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button_movie.setOnClickListener{ _ -> startActivity(Intent(this, MovieActivity::class.java))}
-        
+        button_cupcake.setOnClickListener { _ -> startActivity(Intent(this, CupcakeActivity::class.java)) }
+
     }
 }

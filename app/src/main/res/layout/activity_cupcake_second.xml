@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cupcake_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/big_cake"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unicorn_cupcake" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Pink Cupcakes"
+        android:textAppearance="@style/MyTextAppearance.H4"
+        app:layout_constraintBottom_toTopOf="@+id/textview_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/big_cake"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_level"
+        android:drawablePadding="4dp"
+        android:text="Level : easy"
+        android:textAppearance="@style/MyTextAppearance.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/textview_baking_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/big_cake"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+    <TextView
+        android:id="@+id/textview_baking_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableStart="@drawable/ic_timer_black_24dp"
+        android:text="Baking time: 30min"
+        android:textAppearance="@style/MyTextAppearance.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/small_cake_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/big_cake"
+        app:layout_constraintTop_toBottomOf="@+id/textview_level" />
+
+    <ImageView
+        android:id="@+id/small_cake_2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/small_cake_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_cake"
+        app:srcCompat="@drawable/pink_cupcake" />
+
+    <ImageView
+        android:id="@+id/small_cake_1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/small_cake_2"
+        app:layout_constraintTop_toBottomOf="@+id/big_cake"
+        app:srcCompat="@drawable/mermaid_cupcake" />
+
+    <ImageView
+        android:id="@+id/small_cake_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_cake_2"
+        app:srcCompat="@drawable/pink_glitter_cupcakes" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <Button
+        android:id="@+id/button_bake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Bake"
+        app:layout_constraintBottom_toBottomOf="@+id/small_cake_3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
