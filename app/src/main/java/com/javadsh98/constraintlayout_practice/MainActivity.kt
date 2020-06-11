@@ -18,6 +18,6 @@ class MainActivity : AppCompatActivity() {
         button_simple_motion_layout.setOnClickListener { _ -> startActivity(Intent(this, MotionLayoutActivity::class.java)) }
         button_motin_editor.setOnClickListener { _ -> startActivity(Intent(this, MotionEditorActivity::class.java)) }
         button_swipe_recyclerview.setOnClickListener { _ -> startActivity(Intent(this, RecyclerSwipeActivity::class.java)) }
-
+        button_flow.setOnClickListener { _ -> startActivity(Intent(this, FlowLayoutActivity::class.java)) }
     }
 }
