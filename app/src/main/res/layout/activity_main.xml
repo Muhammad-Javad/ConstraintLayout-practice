@@ -20,20 +20,18 @@
         android:id="@+id/button_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Movie Demo"
         app:layout_constraintBottom_toTopOf="@+id/button_cupcake"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/button_cupcake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Cupcake Demo"
         app:layout_constraintBottom_toTopOf="@+id/button_circular_demo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +42,6 @@
         android:id="@+id/button_circular_demo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Circular Demo"
         app:layout_constraintBottom_toTopOf="@+id/button_image_filter_view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +52,6 @@
         android:id="@+id/button_image_filter_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Image Filter View"
         app:layout_constraintBottom_toTopOf="@+id/button_ci_states"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,9 +62,8 @@
         android:id="@+id/button_ci_states"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="States"
-        app:layout_constraintBottom_toTopOf="@+id/button_swipe_recyclerview"
+        app:layout_constraintBottom_toTopOf="@+id/button_simple_motion_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_image_filter_view" />
@@ -77,11 +72,30 @@
         android:id="@+id/button_swipe_recyclerview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="Motion Swipe Recyclerview"
         app:layout_constraintBottom_toTopOf="@+id/button_flow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_motin_editor" />
+
+    <Button
+        android:id="@+id/button_simple_motion_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Motion layout"
+        app:layout_constraintBottom_toTopOf="@+id/button_motin_editor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_ci_states" />
+
+    <Button
+        android:id="@+id/button_motin_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion Editor"
+        app:layout_constraintBottom_toTopOf="@+id/button_swipe_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_simple_motion_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
